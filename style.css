@@ -1,0 +1,30 @@
+.x{
+    background:linear-gradient(45deg, red 50%,blue,green,pink,purple);
+    height: 300px;
+    width: 300px;
+    
+}
+
+.y{
+    background:linear-gradient(to bottom, red,blue,green,pink,purple);
+    height: 200px;
+    width: 200px;
+}
+
+#x{
+    background:linear-gradient(to right, red 10%,blue,green,pink,purple);
+    height: 400px;
+    width: 400px;
+}
+
+.z{
+    background:linear-gradient(to left, red 70%,blue,green,pink,purple);
+    height: 300px;
+    width: 300px;
+}
+
+#y{
+    background: radial-gradient(red 80%,lightblue,grey,lightgreen);
+    height: 200px;
+    width: 400px;
+}
