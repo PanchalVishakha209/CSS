@@ -1,0 +1,12 @@
+/* @import "path/filename.type";
+@import url(path/filename.type); */
+
+/* @import "import.css"; */
+
+
+.x{
+    background-color: blueviolet;
+
+    height: 100px;
+    width: 200px;
+}

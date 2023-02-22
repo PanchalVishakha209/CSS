@@ -1,0 +1,57 @@
+
+h1{
+
+    color: blue;
+    background: crimson ;
+
+}
+
+h2{
+    /* text-shadow: x y blur color; */
+    text-shadow: 3px 5px 2px pink,4px 2px 5px blueviolet,-2px -4px 1px green;
+
+}
+
+h3{
+
+    text-shadow: 1px 2px 1px darkred,-2px -4px 2px darkmagenta;
+    font-size: 100px;
+
+}
+
+.b{
+
+    /* font-weight: bold;
+    font-weight: bolder; */
+     
+    font-weight: 600; 
+    
+    /* (600 to 900) */
+
+
+}
+
+.i{
+     font-style: italic;
+    
+}
+
+.u{
+    /* text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through; */
+
+    text-decoration: underline;
+
+    font-size: 2rem;
+
+    /* 1rem=16px */
+}
+
+#para{
+
+
+    
+
+
+}
