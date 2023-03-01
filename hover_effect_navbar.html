@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .effect{
+            height: 5px;
+            width: 0px;
+            background: black;
+            transition: 1s;
+        }
+
+        li:hover .effect{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="">home</a>
+            <div class="effect"></div>
+        </li>
+        <li><a href="">contact</a>
+            <div class="effect"></div>
+        </li>
+        <li><a href="">about as</a>
+            <div class="effect"></div>
+        </li>
+        <li><a href="">feed back</a>
+            <div class="effect"></div>
+        </li>
+    </ul>
+    
+</body>
+</html>
