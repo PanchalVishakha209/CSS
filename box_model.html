@@ -6,88 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;margin: 0;padding: 0;}
+
+        *{box-sizing: border-box; margin:0; padding:0;}
         .header{
-            background: lightcoral;
-            height: 100%;
+            height: 100px;
             width: 100%;
-            position: fixed;
+            background: lightblue;
             display: flex;
+            
+            
         }
+
         .header .logo{
             height: 100px;
             width: 20%;
-            background: crimson;
+            background-color: brown;
+           
         }
+
         .header .cname{
             height: 100px;
             width: 80%;
-            background: peru;
+            background: lightsalmon;
+           
+            
         }
-        .nav
-        {
-            background: lightgreen;
+
+        .nav{
             height: 50px;
-            /* width: 100px; */
-            margin-top: 100px;
+            width: 100%;
+            background: plum;
             text-align: center;
             line-height: 50px;
+            /* margin-top: 100px; */
+
+          
+            
+            
         }
 
         .nav ul li{
-            display: inline;
             list-style: none;
-            margin-right: 20px;
-            padding: 5px 20px;
+            display: inline;
+            margin-right: 20x;
+            padding: 5px 10px; 
+  
         }
 
-        .nav ul li a{
-            text-decoration: none;
-            color: #000;
-            font-size: 20px;
-            font-weight: bold;
+        ul li a{
+            color:white;
             font-family: cursive;
-            background: lightcoral;
+            text-decoration: none;
+            font-weight: bold;
+            background: purple;
             padding: 5px 15px;
+        }
+
+        .content{
+            height: 500px;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            
+            
+        }
+
+        .content .p1{
+            height: 500px;
+            width: 25%;
+            border:2px solid black;
+            
+         
+
+        }
+
+        .content .p2{
+            height: 500px;
+            width: 25%;
+            border:  2px solid red;
+           
+        }
+
+        .content .p2 .h{
+            height: 50%;
+            /* width: 100%; */
+            border:  2px solid black;
+           
+        }
+
+
+        .content .p3{
+            height: 500px;
+            width: 25%;
+            border:  2px solid black;
+           
+        }
+
+
+        .content .p4{
+            height: 500px;
+            width: 25%;
+            border: 2px solid black;
+           
+        }
+
+        .footer{
+            height: 300px;
+            width: 100%;
+            background: lawngreen;
         }
 
 
         
-        .content{
-            background: lightseagreen;
-            height: 200px;
-            width: 100px;
-        }
-        .x1{
-            background: lightslategray;
-            height: 200px;
-            width: 100px;
-        }
-        .footer{
-            background: limegreen;
-            height: 200px;
-            width: 100px;
-        }
     </style>
 </head>
 <body>
-    <div class="header">
+   <div class="header">
         <div class="logo">logo</div>
-        <div class="cname">company name</div>
-    </div>
-    <div class="nav">
+        <div class="cname">company-name</div>
+   </div>
+
+   <div class="nav">
         <ul>
-            <li><a href=""></a>home</li>
-            <li><a href=""></a>service</li>
-            <li><a href=""></a>contact</li>
-            <li><a href=""></a>about</li>
+            <li><a href="">home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">about</a></li>
+            
         </ul>
-    </div>
-    <div class="content"></div>
-    <div class="x1">part1</div>
-    <div class="x1">part2</div>
-    <div class="x1">part3</div>
-    <div class="x1">part4</div>
-    <div class="footer"></div>
+   </div>
+   <div class="content">
+            <div class="p1"></div>
+            <div class="p2">
+                <div class="h"></div>
+                <div class="h"></div>
+            </div>
+            <div class="p3"></div>
+            <div class="p4"></div>
+   </div>
+   <div class="footer"></div>
 </body>
 </html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-card{
+            /* height: 100%;
+            width: 100%; */
+            border: 10px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 35px;
+
+        }
+
+        .card{
+
+            height: 400px;
+            width: 200px;
+             background: coral;
+            position:relative ;
+            /* display: flex;
+            flex-wrap: wrap; */
+            margin: 10px;
+          
+
+        }
+
+        .card .pre-img{
+            height: 240px;
+            width: 200px;
+            background: lightblue;
+           
+
+
+        }
+
+       .card .pre-quick{
+            content: "";
+            height: 50px;
+            width: 200px;
+            background: palevioletred;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            transition: 1s;
+
+            opacity: 1;
+
+
+            
+
+           
+
+
+
+        }
+
+        .card .pre-info{
+            height: 160px;
+            width: 200px;
+            background: orange;
+
+        }
+
+
+
+        .card .pre-quick:hover{
+            background: plum;
+        }
+
+        .pre-img:hover .pre-quick{
+            top: 200px;
+            opacity: 0;
+        }
+
+       
+
+    </style>
+</head>
+
+<body>
+
+    <div class="product-card">
+        <div class="card">
+            <div class="pre-img">
+                 <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
+            <div class="pre-quick">Quick-View</div>
+        </div>
+
+            <div class="pre-info"></div>
+        
+            </div>
+
+            <div class="card">
+                <div class="pre-img">
+                     <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
+                <div class="pre-quick">Quick-View</div>
+            </div>
+    
+                <div class="pre-info"></div>
+            
+                </div>
+           
+                
+                <div class="card">
+                    <div class="pre-img">
+                         <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
+                    <div class="pre-quick">Quick-View</div>
+                </div>
+        
+                    <div class="pre-info"></div>
+                
+                    </div>
+           
+                    
+                    <div class="card">
+                        <div class="pre-img">
+                             <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
+                        <div class="pre-quick">Quick-View</div>
+                    </div>
+            
+                        <div class="pre-info"></div>
+                    
+                        </div>
+                       
+           
+        
+    </div>
+
+</body>
+</html>
