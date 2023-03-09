@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: ;}
+        .main{
+            height:1000px;
+            width: 1000px;
+            border: 2px solid red;
+             display: flex; 
+          
+        }
+
+       .main .p1{
+
+            height: 300px;
+            width: 40%;
+            /* border: 2px solid blue; */
+            margin-top:50px ;
+            margin-bottom:50px ;
+            margin-right:;
+            margin-left:100px ;
+            background: url(bottom1.jpg);
+            
+
+            z-index: 0;
+
+            display: flex;
+   
+            
+
+       }
+
+
+      
+       .p1 .effect{
+        height: 300px;
+            width: 40%;
+            background: url(bottom1.jpg);
+            position: absolute;
+            top: ;
+            right: 100%;
+
+            z-index: -1;
+      }
+
+      .p1:hover  .effect{
+        right: 0;
+      }
+
+
+
+      .main .p2{
+
+height: 300px;
+width: 40%;
+/* border: 2px solid blue; */
+margin-top:50px ;
+margin-bottom:50px ;
+margin-right:;
+margin-left:100px ;
+background: url(bottom2.jpg);
+
+
+z-index: 0;
+
+display: flex;
+
+
+
+}
+
+
+
+
+.p2 .effect{
+height: 300px;
+width: 40%;
+background: url(bottom1.jpg);
+position: absolute;
+top: ;
+right: 100%;
+
+z-index: -1;
+}
+
+.p2:hover  .effect{
+right: 0;
+}
+
+     
+
+      
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="p1">FALL AHEAD
+        <div class="effect"></div>
+        </div>
+
+        <div class="p2">FALL AHEAD
+            <div class="effect"></div>
+            </div>
+
+        
+        
+    </div>
+    
+</body>
+</html>

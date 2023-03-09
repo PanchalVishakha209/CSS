@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+
+            height: 200px;
+            width: 200px;
+            background: black;
+            margin: 200px auto;
+
+            /* animation-name: anyname;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; */
+
+            animation: anyname 2s infinite;
+
+
+            
+        }
+
+        @keyframes anyname{
+            /* from{background-color: black; height: 200px; width: 200px;}
+            to{background-color: red; height: 100px; width: 100px;} */
+
+            0%{background-color: black;}
+            20%{background-color: aqua; transform: translateX(400px);}
+            40%{background-color: lightcoral;  transform: translateX(400px);}
+            60%{background: linear-gradient(red blue); border-radius: 50%; height: 0; width: 0;}
+            80%{background-color: white; box-shadow: 0 0 34px black;}
+            100%{background-color: pink;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

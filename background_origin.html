@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border-box{
+            border: 20px solid rgba(0, 0, 0,.35);
+            margin: 50px;
+            padding: 100px;
+            background: url(bottom1.jpg);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            /* color: azure; */
+
+        }
+        
+
+        .padding-box{
+            border: 20px solid  rgba(0, 0, 0, .50);
+            margin: 50px;
+            padding: 100px;
+            background: url(bottom1.jpg);
+            /* background-size: 100% 100%; */
+            background-origin: padding-box;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* color: azure; */
+
+
+        }
+
+        .content-box{
+            border: 20px solid  rgba(0, 0, 0, .50);
+            /* margin: 50px; */
+            padding: 35px;
+            background: url(bottom1.jpg);
+            /* background-size: 100% 100%; */
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* color: azure; */
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="border-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis adipisci dicta veniam at nulla minima officiis, eveniet optio praesentium. Est animi nam qui eveniet harum, dicta culpa in natus omnis.</div>
+    <div class="padding-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis adipisci dicta veniam at nulla minima officiis, eveniet optio praesentium. Est animi nam qui eveniet harum, dicta culpa in natus omnis.</div>
+    <div class="content-box">Lorem ipsum dolor sit amet consectetur, <br><br>adipisicing elit. Nobis adipisci dicta veniam at nulla minima officiis, eveniet optio praesentium. <br><br>Est animi nam qui eveniet harum, dicta culpa in natus omnis.</div>
+
+</body>
+</html>
