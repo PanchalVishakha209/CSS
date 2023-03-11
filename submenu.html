@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth;}
+        .nav{
+            height: 200px;
+            width: 100%;
+            background: plum;
+            text-align: center;
+            margin: 20px 0;
+
+            
+            
+        }
+
+      
+
+        .nav .menu{
+            display: inline;
+            margin-right: 30px ;
+            border: 2px solid;
+            position: relative;
+         
+        }
+
+        .nav a{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+
+        .nav .dropdown{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        .nav .menu:hover .dropdown{
+            display: block;
+        }
+
+        #home, #service ,#contact ,#aboutus{
+            height: 700px;
+            border: 2px solid;
+        }
+
+        #test{
+            height: 50px;
+            width: 150px;
+            background: darkgoldenrod;
+            display: block ;
+            position: fixed;
+            bottom:10px ;
+            right: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="menu"><a href="#home">HOME</a></li>
+            <li class="menu"><a href="#service">SERVICE</a>
+            <ul class="dropdown">
+                <li><a href="">service1</a></li>
+                <li><a href="">service2</a></li>
+                <li><a href="">service3</a></li>
+                <li><a href="">service4</a></li>
+                <li><a href="">service5</a></li>
+            </ul>
+            </li>
+            <li class="menu"><a href="#contact">CONTACT</a></li>
+            <li class="menu"><a href="#aboutus">ABOUT US</a></li>
+        </ul>
+    </div>
+
+    <div id="home">home</div>
+    <div id="service">service</div>
+    <div id="contact">contact</div>
+    <div id="aboutus">aboutus</div>
+    
+    <a href="" id="test">to top</a>
+
+
+
+</body>
+</html>
