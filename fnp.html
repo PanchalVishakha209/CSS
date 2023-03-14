@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+
+        .a{
+            height: 20px;
+            width: 100%;
+            background: olive;
+        }
+
+        .b{
+            height: 60px;
+            width: 100%;
+            background: #6b8e23;
+            display: flex;
+           
+        }
+
+        .b .logo{
+
+            height: 40px ;
+            width:15% ;
+            /* border: 2px solid; */
+            padding-left: 60px;
+            display: flex;
+            
+
+        }
+
+        .b span{
+            font-weight: 500;
+            padding-top: 5px;
+            font-size: 45px;
+            color: white;
+        }
+
+        .logo i{
+            font-size: 30px;
+            color: orange;  
+            padding-top: 15px; 
+            
+        }
+
+        .logo p{
+            font-size: 7px;
+            color: white;
+            padding-top: 15px;  
+            
+        }
+
+        /* .fa-search{
+            color: orange;
+            border: 2px solid white;
+
+        } */
+
+        .b .search{
+
+            margin-top: 15px;
+            height: 40px ;
+            width:30% ;
+            /* border: 2px solid; */   
+        }
+
+        .search input{
+            height: 35px;
+            width:400px;
+            border-radius: 5px;
+            font-size: 15px;
+            padding-left: 7px;    
+        }
+
+        .b .location{
+
+            height: 40px ;
+            width:15% ;
+            margin-top: 15px;
+            
+            /* border: 2px solid; */
+
+        }
+
+        .location input{
+            height: 35px;
+            width:200px;
+            border-radius: 5px;
+            font-size: 15px;
+            padding-left: 7px; 
+
+        }
+
+        .cart{
+
+            padding-left: 300px;
+            padding-top: 10px;
+           
+        }
+
+        .cart i{
+            color: white;
+            font-size: 20px;
+            display: block;
+
+
+        }
+
+        .cart span{
+            font-size: 20px;
+            color: white;
+        }
+
+
+
+         .guest{
+
+            padding-left: 50px;
+            padding-top: 10px;
+           
+        }
+
+        .guest i{
+            color: white;
+            font-size: 20px;
+            display: block;
+
+
+        }
+
+        .guest span{
+            font-size: 20px;
+            color: white;
+        }
+
+        .nav{
+            height: 50px;
+            background: white;
+            color: black;
+           box-shadow: 0 0 2px black;
+           
+        }
+
+        .nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .nav li{
+            padding: 10px;
+        }
+
+        .nav li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .main{
+            height: 400px;
+            width: 100%;
+            background: lightgray;
+            padding: 0px 40px;
+            padding-bottom: 10px;
+        }
+
+        .main .flower{
+            background: white;
+            height: 100%;
+            width: 100%;
+           
+            display: flex;
+            
+        
+        }
+        
+        .main .f{
+            height: 10%;
+            width: 100%;
+            background: white;
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: space-between;
+            font-size: 50px;
+        
+        }
+
+        .v button{
+            font-size: 50px;
+            background: olive;
+            color: white;
+            border: none;
+            
+        }
+
+        
+
+        .flower .f1{
+            height: 250px;
+            width: 25%;
+            background: url(Premium-Flowers.webp);
+            border: 10px solid white;
+            box-shadow: 0 0 2px black;
+            border-radius: 50%;
+            margin: 50px 10px;
+            background-size: 100% 100%;
+        
+        }
+
+        .flower .f2{
+            height: 250px;
+            width: 25%;
+            background: url(Orchids.webp);
+            border: 10px solid white;
+            box-shadow: 0 0 2px black;
+            border-radius: 50%;
+            margin: 50px 10px;
+           
+            background-size: 100% 100%;
+        }
+
+        .flower .f3{
+            height: 250px;
+            width: 25%;
+            background: url(roses.webp);
+            border: 10px solid white;
+            box-shadow: 0 0 2px black;
+            border-radius: 50%;
+            margin: 50px 10px;
+            background-size: 100% 100%;
+        }
+
+        .flower .f4{
+            height: 250px;
+            width: 25%;
+            background: url(carnations-desk.webp);
+            border: 10px solid white;
+            box-shadow: 0 0 2px black;
+            border-radius: 50%;
+            margin: 50px 10px;
+            background-size: 100% 100%;
+        }
+
+        .flower .f1:hover{
+            background-size: 102% 102%;
+        }
+
+        .flower .f2:hover{
+            background-size: 102% 102%;
+        }
+
+        .flower .f3:hover{
+            background-size: 102% 102%;
+        }
+
+        .flower .f4:hover{
+            background-size: 102% 102%;
+        }
+
+        .f1 .p{
+            display: flex;
+            justify-content: center;
+            line-height: 520px;
+            font-weight: bold;
+        }
+
+        .f2 .o{
+            display: flex;
+            justify-content: center;
+            line-height: 520px;
+            
+            font-weight: bold;
+        }
+
+        .f3 .r{
+            display: flex;
+            justify-content: center;
+            line-height: 520px;
+           
+            font-weight: bold;
+        }
+
+        
+        .f4 .c{
+            display: flex;
+            justify-content: center;
+            line-height: 520px;
+           
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- start -->
+    <div class="a"></div>
+    <!-- end -->
+
+
+    <!-- start -->
+    <div class="b">
+        <div class="logo">
+            <i class="fa fa-gift"></i>
+            <span>fnp</span>
+            <p>FRENS<br>N<br>PETALS</p>
+        </div>
+        <div class="search">
+            <form action="">
+            <input type="text"  placeholder="search flower,cakes,gifts etc.">
+        </form>
+        </div>
+        <div class="location"> 
+            <form action="">
+                <input type="text"  placeholder="select dilivery location >">
+            </form>
+        </div>
+
+        <div class="cart">
+            <i class="fa fa-cart-shopping"></i>
+            <span>cart</span>
+        </div>
+
+        <div class="guest">
+            <i class="fa fa-user"></i>
+            <span>Hi-Guest</span>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- start -->
+
+    <div class="nav">
+        <ul>
+            <li><a href="">BIRTHDAY</a></li>
+            <li><a href="">ANNIVERSARY</a></li>
+            <li><a href="">CAKES</a></li>
+            <li><a href="">FLOWERS</a></li>
+            <li><a href="">PERSONALISED</a></li>
+            <li><a href="">PLANTS</a></li>
+            <li><a href="">CHOCOLATES</a></li>
+            <li><a href="">COMBOS & HAMPERS</a></li>
+            <li><a href="">MORE GIFTS</a></li>
+            <li><a href="">OCCASIONS</a></li>
+            <li><a href="">GLOBAL</a></li>
+        </ul>
+    </div>
+
+    <!-- end -->
+
+
+    <!-- start -->
+    <div class="main">
+
+        <div class="f">
+            <div class="flower1">
+                <span>Flowers</span>
+            </div>
+            <div class="v">
+                <button>view all</button>
+            </div>
+        </div>
+        <div class="flower">
+            
+            <div class="f1">
+                <div class="p">Premuim Flower</div>
+            </div>
+          
+            <div class="f2">
+                <div class="o">Orchids</div>
+            </div>
+            <div class="f3">
+                <div class="r">Roses</div>
+            </div>
+            <div class="f4">
+                <div class="c">carnations</div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+</body>
+</html>
