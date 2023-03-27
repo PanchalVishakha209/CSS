@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header
+        {
+            height: 100px;
+            background: lightgreen;
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+        }
+
+        .header .x , .p , .y ,.t{
+            border: 2px solid;
+        }
+
+        .nav
+        {
+            height: 50px;
+            background: lightcoral;
+        }
+
+        .content
+        {
+            height: 400px;
+            background: lightseagreen;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .z{
+            display: grid;
+        }
+
+        .test{
+            display: grid;
+        }
+
+        .footer
+        {
+            height: 200px;
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo x"></div>
+        <div class="cname x"></div>
+    </div>
+
+    <div class="nav"></div>
+
+    <div class="content">
+        <div class="p"></div>
+        <div class="p z">
+            <div class="y">y1</div>
+            <div class="y test">
+                <div class="t"></div>
+                <div class="t"></div>
+            </div>
+            <div class="y">y3</div>
+        </div>
+        <div class="p"></div>
+        <div class="p"></div>
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>
