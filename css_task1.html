@@ -6,38 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .product-card{
-            /* height: 100%;
-            width: 100%; */
-            border: 10px solid red;
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+        .x{
+            border: 2px solid red;
+        }
+        .main{
+            height: 600px;  
+        }
+        .title{
+            height: 150px;
             display: flex;
-            flex-wrap: wrap;
-            padding: 35px;
+            justify-content: center; 
+            line-height: 100px;
+        }
 
+        /* .title .men{
+            padding: 7px 30px;
+            font-size: 30px;
+            background: coral;   
+        } */
+
+        .title .a{
+            
+            padding: 10px 150px;
+            font-size: 30px;
+            background: coral; 
+            margin: 20px 20px;  
+        }
+
+        .finalcard{
+            display: flex;
         }
 
         .card{
 
             height: 400px;
-            width: 200px;
-             background: coral;
+            width: 300px;
+            background: coral;
             position:relative ;
-            /* display: flex;
-            flex-wrap: wrap; */
-            margin: 10px;
-          
+            margin: 30px 100px;
+            /* display: flex; */
+
 
         }
-
+/* 
         .main{
             height: 240px;
             width: 200px;
-            /* background: plum; */
+            position: relative;
+            box-shadow: 0 0 20px black;
+        }
+ */
+ .card .pre-img{
+            height: 300px;
+            width: 300px;
+            background: lightblue;
+           
+
+
+        } 
+
+        /* .main{
+            height: 400px;
+            width: 200px;
+            background: plum;
             position: relative;
             box-shadow: 0 0 20px black;
         }
 
-        /* .front{
+        .front{
             height: inherit;
             width: inherit;
             background: lightblue;
@@ -54,8 +91,8 @@
         .back{
             height: inherit;
             width: inherit;
-            /* background: url(m1.jpg);
-            background-size: 100% 100%; */
+            background: url(m1.jpg);
+            background-size: 100% 100%;
 
             position: absolute;
             top: 0;
@@ -74,22 +111,14 @@
         
         .main:hover .back{
             transform: rotateY(180deg);
-        } */
+        }
 
- 
-        .card .pre-img{
-            height: 240px;
-            width: 200px;
-            background: lightblue;
+
+
+ .card .pre-quick{
            
-
-
-        } 
-
-       .card .pre-quick{
-            content: "";
             height: 50px;
-            width: 200px;
+            width: 300px;
             background: palevioletred;
             font-weight: bold;
             display: flex;
@@ -101,13 +130,13 @@
 
             transition: 1s;
 
-            opacity: 1;
+            opacity: 1; */
 
-        }
+        
 
         .card .pre-info{
-            height: 160px;
-            width: 200px;
+            height: 100px;
+            width: 300px;
             background: orange;
             display: flex;
             justify-content: center;
@@ -121,7 +150,7 @@
             background: plum;
         }
 
-        .pre-img:hover .pre-quick{
+        .main:hover .pre-quick{
             top: 200px;
             opacity: 0;
         }
@@ -161,81 +190,60 @@
         .main:hover .effect{
             transform: scale(1.2);
         }
-
-        
-
-       
-
+      
     </style>
 </head>
-
 <body>
-
-    <div class="product-card">
-        <div class="card">
-            <div class="main">
-                <div class="front">
-                    <img src="m1.jpg" alt="" height="100%" width="100%">
-                </div>
-                    <div class="back">
-                        <img src="m1.jpg" alt="" height="100%" width="100%">
-                    </div>
-                <!-- </div> -->
-            <div class="pre-quick">Quick-View</div>
-            </div>
-          
-            </div>
-            <div class="pre-info">
-                <div class="main"><a href="">Add To Cart</a>
-                    <div class="effect"></div>
-                </div>
-            </div>
+    <div class="main x">
+        <div class="title x">
+            <div class="men a x">Men's</div>
+            <div class="women's a x">Women's</div>
+            <div class="bag a x">BAGS</div>
+            <div class="footwear a x">Footwear</div>
         </div>
 
-        <div class="card">
-            <div class="pre-img">
-                 <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
-            <div class="pre-quick">Quick-View</div>
-          
-            </div>
-            <div class="pre-info">
-                <div class="main"><a href="">Add To Cart</a>
-                    <div class="effect"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="pre-img">
-                 <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
-            <div class="pre-quick">Quick-View</div>
-          
-            </div>
-            <div class="pre-info">
-                <div class="main"><a href="">Add To Cart</a>
-                    <div class="effect"></div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="pre-img">
-                 <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
-            <div class="pre-quick">Quick-View</div>
-          
-            </div>
-            <div class="pre-info">
-                <div class="main"><a href="">Add To Cart</a>
-                    <div class="effect"></div>
-                </div>
-            </div>
-        </div>
-
-
+       
         
+         <div class="card">
+            <div class="pre-img">
+                 <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
+            <div class="pre-quick">Quick-View</div>
+          
+            </div>
+            <div class="pre-info">
+                <div class="main"><a href="">Add To Cart</a>
+                    <div class="effect"></div>
+                </div>
+            </div>
+         </div>
 
-           
+         <div class="card">
+            <div class="pre-img">
+                 <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
+            <div class="pre-quick">Quick-View</div>
+          
+            </div>
+            <div class="pre-info">
+                <div class="main"><a href="">Add To Cart</a>
+                    <div class="effect"></div>
+                </div>
+            </div>
+         </div>
 
+         <div class="card">
+            <div class="pre-img">
+                 <img src="girls_softtoy.webp" alt="" height="100%" width="100%">
+            <div class="pre-quick">Quick-View</div>
+          
+            </div>
+            <div class="pre-info">
+                <div class="main"><a href="">Add To Cart</a>
+                    <div class="effect"></div>
+                </div>
+            </div>
+         </div>
+
+         </div>
+         
 </body>
 </html>
