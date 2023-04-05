@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+    <style>
+        a{
+            height: 50px;
+            width: 50px;
+            /* background: gray; */
+            display: inline-block;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+            
+        }
+
+        .front{
+            height: 50px;
+            width: 50px;
+            background: rgb(62, 62, 172);
+            color: black;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateZ(20px);
+          
+        }
+
+        .back{
+            height: 50px;
+            width: 50px;
+            color: black;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* background:palevioletred ; */
+            transform: rotateX(90deg) translateZ(25px);
+        }
+
+        a:hover{
+            transform: rotateX(-90deg) translateZ(0);
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        <div class="front"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="back"><i class="fa-brands fa-facebook-f"></i></div>
+    </a>
+
+    <a href="">
+        <div class="front" style="background: palevioletred;"><i class="fa-brands fa-instagram"></i></div>
+        <div class="back"><i class="fa-brands fa-instagram"></i></div>
+    </a>
+
+    <a href="">
+        <div class="front"  style="background: lightskyblue;"><i class="fa-brands fa-twitter"></i></div>
+        <div class="back"><i class="fa-brands fa-twitter"></i></div>
+    </a>
+
+    <a href="">
+        <div class="front"  style="background: rgb(28, 180, 15);"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="back"><i class="fa-brands fa-whatsapp"></i></div>
+    </a>
+</body>
+</html>
